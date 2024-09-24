@@ -9,3 +9,5 @@
       name: apache2
       state: absent
       purge: yes
+    when:
+      - ansible_facts['distribution'] == "Ubuntu"
