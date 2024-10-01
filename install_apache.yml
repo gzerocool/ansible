@@ -11,3 +11,4 @@
       purge: yes
     when:
       - ansible_facts['distribution'] == "Ubuntu"
+
