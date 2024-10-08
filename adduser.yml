@@ -11,7 +11,7 @@
       groups: root
 #      state: absent
 
-  - name: add ssh key for ansible user
+  - name: add ssh key for ansible remote user 
     tags: always
     authorized_key:
       user: ansibleuser
