@@ -1,13 +1,13 @@
 ---
 
-- hosts: all
+- hosts: Arla
   become: true
   tasks:
 
   - name: install apache2 package
     apt:
       name: apache2
-      state: absent
+      state: latest
       purge: yes
     when:
       - ansible_facts['distribution'] == "Ubuntu"
